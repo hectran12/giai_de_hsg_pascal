@@ -34,10 +34,13 @@ begin
                         break;
                     end;
                 end;
+                if check = true then begin
+                    break;
+                end;
 
         end;
-        write(g, x, ' ', y);
-
+        write(g, x+1, ' ', y+1);
+        readln;
         close(f);
         close(g);
 
